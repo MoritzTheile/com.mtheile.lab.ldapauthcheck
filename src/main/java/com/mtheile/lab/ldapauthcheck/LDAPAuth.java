@@ -10,7 +10,7 @@ import javax.naming.directory.InitialDirContext;
 import javax.naming.directory.SearchControls;
 import javax.naming.directory.SearchResult;
 
-public class LDAPAuthImpl {
+public class LDAPAuth {
 
 	/**
 	 * First step: Authenticate to LDAP 
@@ -118,7 +118,7 @@ public class LDAPAuthImpl {
 	
 	public static void main(String[] args) throws Exception{
 		
-		System.out.println(new LDAPAuthImpl().loginAndReturnUsername(
+		System.out.println(new LDAPAuth().loginAndReturnUsername(
 				"uid=riemann,dc=example,dc=com",// SECURITY_PRINCIPAL,
 				"password",// SECURITY_CREDENTIALS,
 				"ldap://ldap.forumsys.com:389",// PROVIDER_URL,

@@ -5,6 +5,6 @@ Simple code for understanding and testing authentication against an LDAP or Acti
 
 Especially the emtpy password issue is worth mentioning - I learned the hard way (see code).
 
-Only the LDAPAuthImpl class contains authentication relevant code - so start there.
+Only the LDAPAuth class contains authentication relevant code - so start there.
 
 Have fun :-)

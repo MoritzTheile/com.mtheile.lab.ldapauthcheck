@@ -11,7 +11,7 @@ public class Main {
 			Konfig konfig = KonfigExImport.importOrCreateKonfig();
 
 
-			String username = new LDAPAuthImpl().loginAndReturnUsername(
+			String username = new LDAPAuth().loginAndReturnUsername(
 					konfig.getSecurityPricipal(), 
 					konfig.getSecurityCredentials(), 
 					konfig.getProviderUrl(), 
